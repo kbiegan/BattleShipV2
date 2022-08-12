@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Display display = new Display();
+            
+           
+            Input input = new Input();
+
+
+            Battleship battleship = new Battleship(display, input);
+            battleship.Run();
         }
     }
 }
